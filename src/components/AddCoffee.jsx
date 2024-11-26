@@ -1,5 +1,5 @@
 import React from "react";
-
+import Swal from 'sweetalert2'
 const AddCoffee = () => {
 
 const handelAddCoffee = e =>{
@@ -16,6 +16,27 @@ const handelAddCoffee = e =>{
 const newCoffee = {name, quantity, supplier, taste, category, details, photo}
 console.log(newCoffee);
 
+// send data to the server
+fetch('http://localhost:5000/coffee',{
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newCoffee)  // send form data as JSON
+ 
+})
+.then(res =>res.json())
+.then(data => {
+    console.log(data);
+    if(data.insertedId){
+        Swal.fire({
+            title: 'Success!',
+            text: 'Coffee added successfully',
+            icon: 'success',
+            confirmButtonText: 'Cool'
+          }) 
+    }
+})
 }
 
   return (
