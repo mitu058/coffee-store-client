@@ -48,7 +48,7 @@ const UpdateCoffee = () => {
     <div>
      
         <div className="flex flex-col justify-center items-center my-10">
-      <div className="max-w-md space-y-6 rounded-lg border bg-white p-10 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
+      <div className="w-[40%] mx-auto space-y-6 rounded-lg border bg-white p-10 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
         <div className="flex flex-col space-y-1">
           <h3 className="text-3xl font-bold tracking-tight text-[#331A15]">Update Coffee Details</h3>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">

@@ -42,7 +42,7 @@ fetch('http://localhost:5000/coffee',{
   return (
     <div className="flex flex-col justify-center items-center my-10">
       
-      <div className="max-w-md space-y-6 rounded-lg border bg-white p-10 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
+      <div className="w-[40%] mx-auto space-y-6 rounded-lg border bg-white p-10 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
         <div className="flex flex-col space-y-1">
           <h3 className="text-3xl font-bold tracking-tight ">Add new Coffee</h3>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
@@ -55,7 +55,7 @@ fetch('http://localhost:5000/coffee',{
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2 text-sm ">
                 <label
-                  className="text-sm font-medium leading-none text-zinc-700 dark:text-zinc-300"
+                  className="text-xl font-medium leading-none text-zinc-700 dark:text-zinc-300"
                   htmlFor="first_name"
                 >
                    Name

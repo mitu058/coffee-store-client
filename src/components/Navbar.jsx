@@ -30,10 +30,12 @@ const Navbar = () => {
               About{" "}
               <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
             </li>
-            <li className="group flex cursor-pointer flex-col">
-              Contact{" "}
+          <Link to='/users'>
+          <li className="group flex cursor-pointer flex-col">
+              Users{" "}
               <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
             </li>
+          </Link>
           </ul>
         </div>
 

@@ -7,6 +7,7 @@ import AddCoffee from "../components/AddCoffee";
 import UpdateCoffee from "../components/UpdateCoffee";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import Users from "../components/Users";
 
 
 const router = createBrowserRouter([
@@ -43,7 +44,13 @@ const router = createBrowserRouter([
               {
                 path:'/register',
                 element:<Register></Register>
+              },
+              {
+                path:'/users',
+                element:<Users></Users>,
+                loader:()=> fetch('http://localhost:5000/users')
               }
+
         ]
         
     },
